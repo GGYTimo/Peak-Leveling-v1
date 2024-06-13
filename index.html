@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inscription - Page 1</title>
+    <link rel="stylesheet" href="page1.css">
+</head>
+<body>
+<header>
+    <h1 style="font-family:'Balgruf';font-weight:normal;font-size:40px">Peak Leveling</h1>
+</header>
+<section class="login">
+    <form id="page1Form">
+        <label style="font-family:'Balgruf';font-weight:normal;" for="username">Pseudo :</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label style="font-family:'Balgruf';font-weight:normal;" for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="button" onclick="nextPage()">Suivant</button>
+    </form>
+    <div class="button">
+        <a href="signup.html">Créer vous un compte.</a>
+    </div>
+    <p id="error-message" style="color: red; display: none;">Pseudo ou mot de passe incorrect.</p>
+</section>
+
+<script>
+    if (document.cookie.indexOf("visited=true") === -1) {
+        var userData = JSON.parse(localStorage.getItem("userData"));
+        if (userData) {
+            var usernameElement = document.getElementById("username");
+            usernameElement.value = userData.username;
+        }
+    }
+
+    function nextPage() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if (username === "") {
+            alert("Veuillez entrer votre pseudo.");
+            return;
+        }
+
+        if (password === "") {
+            alert("Veuillez entrer votre mot de passe.");
+            return;
+        }
+
+        var savedUserData = localStorage.getItem("userData");
+        if (savedUserData) {
+            var userData = JSON.parse(savedUserData);
+            if (userData.username === username && userData.password === password) {
+                window.location.href = "page2.html";
+            } else {
+                document.getElementById("error-message").style.display = "block";
+            }
+        } else {
+            document.getElementById("error-message").style.display = "block";
+        }
+
+        document.cookie = "visited=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+    }
+</script>
+</body>
+</html>

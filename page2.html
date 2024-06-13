@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page2.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 style="font-family:'Balgruf';font-weight:normal;">Peak Leveling</h1>
+    </header>
+
+    <section>
+        <div class="welcome">
+            <h2 style="font-family:'Balgruf';font-weight:normal;">Welcome <span id="username" style="color: red;"></span> !</h2>
+            <p style="font-family:'Balgruf';font-weight:normal;">Leak Leveling est une application de sport innovante inspirée de l'anime "Solo Leveling". Dans cet univers, les utilisateurs deviennent des "chasseurs" qui montent en puissance grâce à des entraînements physiques.</p>
+        </div>
+
+        <div class="b">
+            <a style="font-family:'Balgruf';font-weight:normal;font-size:20px;" href="home.html">Commencez votre Changement</a>
+        </div>
+    </section>
+
+    <script>
+        if (document.cookie.indexOf("visited=true") === -1) {
+            var userData = JSON.parse(localStorage.getItem("userData"));
+            if (userData) {
+                var usernameElement = document.getElementById("username");
+                usernameElement.textContent = userData.username;
+            }
+
+            document.cookie = "visited=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+        } else {
+        }
+    </script>
+</body>
+</html>

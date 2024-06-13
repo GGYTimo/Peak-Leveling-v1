@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inscription</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+<header>
+    <h1 style="font-family:'Balgruf';font-weight:normal;font-size:40px;font-weight: bold;">Peak Leveling</h1>
+</header>
+<section class="signup">
+    <form id="signupForm">
+        <label for="username">Pseudo :</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="button" onclick="signup()">S'inscrire</button>
+    </form>
+    <p id="error-message" class="error-message" style="display: none;">Erreur : Pseudo déjà pris.</p>
+</section>
+
+<script src="signup.js"></script>
+</body>
+</html>

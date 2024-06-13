@@ -1,0 +1,186 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #001014;
+    }
+    header {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        text-align: center;
+        color: white;
+    }
+    .list-bar-one {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li {
+        margin: 0 10px;
+    }
+    .center-image {
+        display: block;
+        margin: 0 auto;
+        width: 1cm;
+    }
+    
+    .image {
+        background-color: rgba(0, 0, 0, 0.4);
+        padding-bottom: 8px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    
+    .daily-quest {
+        max-width: 600px;
+        margin-top: 1cm;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 20px;
+        color: white;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding-bottom: 45px;
+        margin-bottom: 20px;
+    }
+    
+    .pseudo {
+        padding: 0;
+        box-sizing: border-box;
+        text-align: center;
+        background-color: #150E35;
+        margin-top: 1cm;
+        color: white; 
+        border-radius: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    .daily-quest {
+        text-align: center;
+        font-family: 'Balgruf', sans-serif;
+        font-weight: normal;
+        font-size: 40px;
+    }
+    .quest {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    
+    .welcome {
+        text-align: center;
+        margin-top: 20px;
+        color: white;
+    }
+    .welcome h2 {
+        font-weight: normal;
+        color: white;
+    }
+    #username {
+        color: red;
+    }
+    .quest {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    .name-input {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .confirm {
+        background-color: #FF0000; 
+        color: #FFFFFF; 
+        border: none;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    .confirm:hover {
+        background-color: #FFFFFF; 
+        color: #FF0000; 
+        border: 2px solid #FF0000; 
+    }
+
+    .rang {
+        max-width: 600px;
+        margin-top: 1cm;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 20px;
+        color: white;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding-bottom: 45px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: white;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+
+    button.complete {
+        background-color: #ff0000; /* Green background */
+        border: none; /* Remove borders */
+        color: white; /* White text */
+        padding: 10px 20px; /* Some padding */
+        text-align: center; /* Center the text */
+        text-decoration: none; /* Remove underline */
+        display: inline-block; /* Make the container inline */
+        font-size: 16px; /* Increase font size */
+        margin: 4px 2px; /* Add some margin */
+        cursor: pointer; /* Add a pointer on hover */
+        border-radius: 12px; /* Rounded corners */
+        float: right;
+    }
+    
+    button.complete:hover {
+        background-color: #ac0000; /* Darker green background on hover */
+    }
+    
+    button.complete:disabled {
+        background-color: #983ed4; /* Gray background for disabled state */
+        cursor: not-allowed; /* Change cursor for disabled state */
+    }
+    
+    /* Ensure list items have proper clearing after floating elements */
+    ul li {
+        overflow: hidden;
+        margin-bottom: 10px; /* Add space between list items */
+    }
+    
+    /* Optionally, you can style the list and list items for better layout */
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    ul li {
+        padding: 10px;
+        border-bottom: 1px solid #ddd; /* Add a bottom border for better separation */
+    }
+    

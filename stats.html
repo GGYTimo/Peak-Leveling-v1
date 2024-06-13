@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Statistics</title>
+    <link rel="stylesheet" href="stats.css">
+</head>
+<body>
+    <section>
+        <div class="welcome">
+            <h2 style="font-family:'Balgruf';font-weight:normal;color: white;">
+                Welcome <span id="username" style="color: red;"></span>
+            </h2>
+        </div>
+    </section>
+
+    <div class="stats">
+        <h1>Player Statistics</h1>
+        <div class="stat">
+            <span>Level:</span>
+            <span id="user-level">1</span>
+        </div>
+        <div class="stat">
+            <button id="increaseSpeed">+</button>
+            <span>Speed:</span>
+            <span id="speed">5</span>
+            <button id="decreaseSpeed">-</button>            
+        </div>
+        <div class="stat">
+            <button id="increaseStrength">+</button>
+            <span>Strength:</span>
+            <span id="strength">5</span>
+            <button id="decreaseStrength">-</button>            
+        </div>
+        <div class="stat">
+            <button id="increaseIntelligence">+</button>
+            <span>Intelligence:</span>
+            <span id="intelligence">5</span>
+            <button id="decreaseIntelligence">-</button>            
+        </div>
+        <div class="stat">
+            <button id="increaseAgility">+</button>
+            <span>Agility:</span>
+            <span id="agility">5</span>
+            <button id="decreaseAgility">-</button>            
+        </div>
+    </div>
+    
+    
+
+    <div class="center-button">
+        <a class="home" href="home.html">Accueil</a>
+    </div>
+
+    <script src="stats.js"></script>
+</body>
+</html>

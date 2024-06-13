@@ -1,0 +1,75 @@
+body {
+    background-color: #001014;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.welcome {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.stats {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.stats h1 {
+    font-family: 'Balgruf';
+    font-size: 40px;
+}
+
+.stat {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    margin: 10px auto;
+}
+
+.stat span {
+    font-size: 20px;
+}
+
+.center-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.home {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: #555;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.home:hover {
+    background-color: #777;
+}
+
+/* CSS for round buttons */
+button {
+    border: none;
+    border-radius: 50%; /* Makes the button round */
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #ccc; /* Change background color on hover */
+}
+
+button:active {
+    background-color: #aaa; /* Change background color when button is pressed */
+    color: white; /* Change text color when button is pressed */
+}
